@@ -11,6 +11,11 @@
     "repositories": [
         {
             "type": "composer",
+            "url": "https://packages.dxpr.com/8",
+            "only": ["dxpr/dxpr_builder", "dxpr/dxpr_builder_e"]
+        },
+        {
+            "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
