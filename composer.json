@@ -100,6 +100,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "composer-exit-on-patch-failure": "true",
+        "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
         }
     }
 }
