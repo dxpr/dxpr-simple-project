@@ -45,10 +45,6 @@
         },
         "sort-packages": true
     },
-    "enable-patching": true,
-    "patchLevel": {
-        "drupal/core": "-p2"
-    },
     "extra": {
         "drupal-scaffold": {
             "locations": {
