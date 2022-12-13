@@ -18,7 +18,7 @@
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
-        "dxpr/dxpr_simple": "^9.0.x-dev"
+        "dxpr/dxpr_simple": "^9"
     },
     "require-dev": {
         "drush/drush": "^11"
