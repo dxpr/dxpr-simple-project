@@ -22,13 +22,13 @@
     "require": {
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.6.0",
-        "drupal/core-composer-scaffold": "^10.1",
-        "drupal/core-project-message": "^10.1",
-        "drupal/core-recommended": "^10.1",
-        "dxpr/dxpr_marketing_cms": "^10.1.x-dev"
+        "drupal/core-composer-scaffold": "^10.2",
+        "drupal/core-project-message": "^10.2",
+        "drupal/core-recommended": "^10.2",
+        "dxpr/dxpr_marketing_cms": "^10.2.x-dev"
     },
     "require-dev": {
-        "drush/drush": "^11"
+        "drush/drush": "^12"
     },
     "conflict": {
         "drupal/drupal": "*"
