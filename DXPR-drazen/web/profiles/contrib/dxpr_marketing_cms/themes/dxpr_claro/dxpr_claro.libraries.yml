@@ -1,0 +1,15 @@
+# Main theme library.
+global:
+  css:
+    base:
+      css/base/dxpr_claro.css: {}
+  dependencies:
+    - claro/base
+    - claro/global-styling
+
+install-page:
+  css:
+    theme:
+      css/theme/install-page.css: {}
+  dependencies:
+    - claro/install-page

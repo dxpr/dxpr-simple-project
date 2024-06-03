@@ -1,0 +1,36 @@
+main:
+  version: VERSION
+  css:
+    theme:
+      css/moderation_dashboard.css: { }
+
+activity:
+  version: VERSION
+  js:
+    js/moderation_dashboard_activity.js: { }
+  dependencies:
+    - core/jquery
+    - core/once
+
+chart.js.internal_npm:
+  js:
+    /libraries/chart.js/dist/chart.min.js: { minified: true }
+
+chart.js.internal:
+  js:
+    /libraries/chartjs/dist/chart.min.js: { minified: true }
+
+chart.js.external:
+  remote: https://github.com/chartjs/Chart.js
+  version: 3.9.1
+  license:
+    name: MIT
+    url: https://github.com/chartjs/Chart.js/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js:
+      type: external
+      minified: true
+      attributes:
+        integrity: 'sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=='
+        crossorigin: anonymous

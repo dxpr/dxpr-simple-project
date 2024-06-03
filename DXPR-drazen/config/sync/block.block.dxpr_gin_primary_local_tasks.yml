@@ -1,0 +1,22 @@
+uuid: 8bae680b-41c5-408c-9d2d-179b2363817d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dxpr_gin
+_core:
+  default_config_hash: e9B-UrTpguOtotyCkNW__DHwrV2YflrGUkd8a9y-CkE
+id: dxpr_gin_primary_local_tasks
+theme: dxpr_gin
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

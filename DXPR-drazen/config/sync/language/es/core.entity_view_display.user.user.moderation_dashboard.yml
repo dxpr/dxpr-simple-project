@@ -1,0 +1,9 @@
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        components:
+          de4b18d0-c1cb-4074-b239-3895f7747260:
+            configuration:
+              label: 'Recientemente creado'
+              views_label: 'Recientemente creado'

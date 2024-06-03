@@ -1,0 +1,24 @@
+uuid: 1ee41a03-cbd0-4524-9cbc-bdbc22820aa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - contact
+    - filter
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: JtuuGQo9kV3dCfb1-4Sgmhp8GNVdyFxxPS9TatRLeWI
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format basic_html'

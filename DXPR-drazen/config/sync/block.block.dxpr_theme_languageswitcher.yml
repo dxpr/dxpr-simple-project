@@ -1,0 +1,26 @@
+uuid: 95635190-dd8b-49ad-9318-a323b48d49ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_classes
+    - language
+  theme:
+    - dxpr_theme
+third_party_settings:
+  block_classes:
+    block_class: small
+_core:
+  default_config_hash: uq_q2u7qbN9Vt8J7JgJKGR6P96m9PkDcRoM-ZyNA8Fk
+id: dxpr_theme_languageswitcher
+theme: dxpr_theme
+region: secondary_header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

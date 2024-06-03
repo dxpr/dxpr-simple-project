@@ -1,0 +1,11 @@
+body.install-page {
+  background: linear-gradient(45deg, #0550e6 25%, transparent 50%) -50px 0,linear-gradient(-45deg, #0550e6 25%, transparent 50%) -50px 0,linear-gradient(45deg, transparent 75%, #0550e6 75%) 50px 0,linear-gradient(-45deg, transparent 75%, #0550e6 75%) 50px 0,radial-gradient(circle farthest-side at 90% 60%, hsla(224, 100%, 45%, 0.5), transparent 70%),radial-gradient(circle farthest-side at 50% 50%, #0550e6 50%, transparent 70%),radial-gradient(circle farthest-side at 50% 30%, #0550e6 40%, transparent 70%),linear-gradient(135deg, hsla(261, 100%, 45%, 0.5), hsla(224, 100%, 55%, 0) 70%, transparent 100%), black;
+}
+
+.installer-logo {
+  height: 1em;
+}
+
+.install-page .site-name {
+  font-size: var(--font-size-h3);
+}

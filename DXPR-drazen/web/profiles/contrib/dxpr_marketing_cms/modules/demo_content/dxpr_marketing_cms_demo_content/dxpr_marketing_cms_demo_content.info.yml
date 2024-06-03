@@ -1,0 +1,53 @@
+name: DXPR Marketing CMS Demo Content
+type: module
+description: Demo Content for Marketing CMS installation profile.
+package: DXPR
+core_version_requirement: ^9.3 || ^10
+dependencies:
+  - drupal:block
+  - drupal:content_translation
+  - drupal:default_content
+  - drupal:image
+  - drupal:media
+  - drupal:node
+  - dxpr_builder:dxpr_builder
+default_content:
+  node:
+    - 564f412f-1a80-4a87-840b-d38edeeed383
+    - d03e06d7-6408-441e-bfc2-b00faa13dc14
+    - 9c76ff5e-7def-4611-bf22-69cd76a95a79
+    - 77e37a23-36df-4f42-86d2-3778a5f100c1
+    - 2b6abda6-5b2b-4e7f-aec4-2d9e9a9d47be
+    - 8764d205-a20a-4b92-992c-755bbed154a9
+    - 82d6ff4a-679b-45e2-9a5c-1747fe4cfb97
+    - c443b638-b341-4fc8-a1ce-4dc8b527aa7a
+    - 6cac9014-4fb3-4152-a3df-16420d9517e9
+  block_content:
+    - 5eca7429-4952-438e-b2f0-769f177aa5c7
+  media:
+    - a0bdf244-9664-4e3d-87d4-60163271cdd8
+    - 55fdd40d-3e7e-416c-be52-410f3502ea01
+    - 8beee3e3-8052-4602-bae6-62e81069d301
+  file:
+    - d071e4f4-80da-4f63-8c0d-4a7e94795f56
+    - 77bda4a4-571d-4bdb-a735-82734913598b
+    - 3e1caef4-1678-4b95-a4fd-1507991b1263
+  menu_link_content:
+    - 1491a76a-8a97-4ea8-866d-8f3a7451caf5
+    - 21cf2640-1bce-4a12-8346-104fca9d7736
+    - 25e4df65-fc22-47a8-81f2-36eb2c2b1f76
+    - 2641bc1d-ab39-4391-8f96-46cd452b430a
+    - 268cdae5-d168-4dfe-947a-9179663e54f5
+    - 32286a73-5c6c-48f6-a875-05f1360d5df6
+    - 4a369032-6fac-4df0-a119-780ab082bc8c
+    - 4a557011-54ff-4d3e-a470-0e771648758b
+    - 55e97e23-21df-479f-b726-91968971e884
+    - 58e6068a-41ef-4cbf-8fd4-6051156a861e
+    - 76419a7f-21a5-4e2b-8189-f6842a69a4c5
+    - a3f1a202-056e-4447-bed0-0f8e836dd410
+    - d093ecb7-cb6d-42fb-992b-1c8c817dd5f5
+    - fe0e2c0f-e775-464e-b5f0-69ece2054f25
+  user:
+    - c66f67f2-5d13-4889-9233-c00f372a4910
+    - dc5ffa73-9d7f-4ba1-9a51-6c0be15f9c0d
+    - ee5c0321-7bd8-4d8f-94bf-53839609f8ac

@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 4a557011-54ff-4d3e-a470-0e771648758b
+  bundle: menu_link_content
+  depends:
+    82d6ff4a-679b-45e2-9a5c-1747fe4cfb97: node
+default:
+  revision_log_message:
+    -
+      value: 'Created by translation job <a href="/admin/tmgmt/jobs/4">Social Impact</a>.'
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Social Impact'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      target_uuid: 82d6ff4a-679b-45e2-9a5c-1747fe4cfb97
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1680857122
+translations:
+  es:
+    title:
+      -
+        value: 'Impacto social'
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 1
+    content_translation_status:
+      -
+        value: true
+    content_translation_created:
+      -
+        value: 1680857122

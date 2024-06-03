@@ -1,0 +1,29 @@
+uuid: 546e0199-5e02-4daa-907a-3632e48a665a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.drag_and_drop_page
+  module:
+    - text
+  enforced:
+    module:
+      - dxpr_builder_page
+_core:
+  default_config_hash: LeDS5YeIgahCxEobRhABIh79j3dc21k4XUEjwB3CKaA
+id: node.drag_and_drop_page.body
+field_name: body
+entity_type: node
+bundle: drag_and_drop_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

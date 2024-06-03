@@ -1,0 +1,29 @@
+uuid: 8099559b-d7ad-4531-8cd4-fa549f08da0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - dxpr_builder
+    - system
+  theme:
+    - dxpr_gin
+_core:
+  default_config_hash: 7MYXRu2TczgRz2mvTKdHxMJPZ9J41xwsn_k0MaW2uG4
+id: dxpr_gin_licenseinfo
+theme: dxpr_gin
+region: pre_content
+weight: 0
+provider: null
+plugin: license_info
+settings:
+  id: license_info
+  label: 'DXPR License info'
+  label_display: '0'
+  provider: dxpr_builder
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /admin/people
+      /admin/dxpr_studio/dxpr_builder/user_licenses

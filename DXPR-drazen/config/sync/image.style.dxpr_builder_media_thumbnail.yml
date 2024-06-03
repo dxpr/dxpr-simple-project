@@ -1,0 +1,17 @@
+uuid: 66884000-88f2-4607-9e95-a4046647970b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YzZh6H_mXyPGZIh537BXwZWEr6H3Ca5-VwRZRiSM87s
+name: dxpr_builder_media_thumbnail
+label: 'DXPR Builder Media thumbnail'
+effects:
+  1d899e87-51e4-4467-90db-e516c31d4688:
+    uuid: 1d899e87-51e4-4467-90db-e516c31d4688
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: null
+      anchor: center-center

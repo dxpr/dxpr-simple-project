@@ -1,0 +1,31 @@
+uuid: 18b3efc7-4e8d-4fc5-a42e-49ae7ed05329
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog.body
+    - node.type.blog
+  module:
+    - dxpr_builder
+    - user
+_core:
+  default_config_hash: JmshVUSZqaRv0BfNhEfAUMweQJBA7-Xa_t6kpg21p-4
+id: node.blog.default
+targetEntityType: node
+bundle: blog
+mode: default
+content:
+  body:
+    type: dxpr_builder_text
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

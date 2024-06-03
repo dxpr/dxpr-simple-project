@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dxpr_theme
+id: footer
+theme: dxpr_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:5eca7429-4952-438e-b2f0-769f177aa5c7'
+settings:
+  id: 'block_content:5eca7429-4952-438e-b2f0-769f177aa5c7'
+  label: Footer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

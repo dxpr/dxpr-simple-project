@@ -1,0 +1,13 @@
+uuid: c7ca7935-a6f1-4943-80b6-1f10db9c5169
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nAsiwgdFuHL1HqRgmuld9XEOqvyFrnSiDd_0yESmPVA
+id: feedback
+label: 'Contact Us'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

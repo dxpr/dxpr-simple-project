@@ -1,0 +1,20 @@
+uuid: d82425bd-3ea4-4f8f-8b30-a46e9f15f007
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dxpr_gin
+_core:
+  default_config_hash: yBxibmpIYGxDdh6la4ofLy6rA_mmyk6mYzBqNhWEl8A
+id: dxpr_gin_local_actions
+theme: dxpr_gin
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

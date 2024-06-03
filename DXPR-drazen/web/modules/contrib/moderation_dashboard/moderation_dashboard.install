@@ -1,0 +1,119 @@
+<?php
+
+/**
+ * @file
+ * Contains installation and update hooks for Moderation dashboard.
+ */
+
+use Drupal\Core\Url;
+use Drupal\page_manager\Entity\Page;
+
+/**
+ * Implements hook_requirements().
+ */
+function moderation_dashboard_requirements($phase) {
+  if ($phase !== 'runtime') {
+    return [];
+  }
+
+  $requirements = [];
+  $checked = \Drupal::config('moderation_dashboard.settings')->get('chart_js_cdn');
+
+  if (!$checked) {
+    $libraries_directory_file_finder = \Drupal::service('library.libraries_directory_file_finder');
+    $lib_chartjs = $libraries_directory_file_finder->find('chartjs');
+    $lib_chartjs_npm = $libraries_directory_file_finder->find('chart.js');
+    $library_exists = $lib_chartjs || $lib_chartjs_npm;
+
+    if (!$library_exists) {
+      $requirements['moderation_dashboard'] = [
+        'description' => t('Chartjs library needs to be downloaded (recommended) or "Use CDN" setting needs to be checked. Go to <a href=":url">moderation dashboard settings</a>.', [
+          ':url' => Url::fromRoute('moderation_dashboard.settings')->toString(),
+        ]),
+        'severity' => REQUIREMENT_WARNING,
+        'value' => t('Local chartjs library is not present and use CDN setting is FALSE.'),
+      ];
+    }
+    else {
+      $requirements['moderation_dashboard'] = [
+        'severity' => REQUIREMENT_OK,
+        'value' => t('Local chartjs library is present.'),
+      ];
+    }
+  }
+  else {
+    $requirements['moderation_dashboard'] = [
+      'severity' => REQUIREMENT_OK,
+      'value' => t('Chart.js CDN being used.'),
+    ];
+  }
+  $requirements['moderation_dashboard']['title'] = t('Moderation Dashboard Settings');
+
+  return $requirements;
+}
+
+/**
+ * Creates the moderation_dashboard.settings config object.
+ */
+function moderation_dashboard_update_8100() {
+  \Drupal::configFactory()
+    ->getEditable('moderation_dashboard.settings')
+    ->set('redirect_on_login', TRUE)
+    ->save(TRUE);
+}
+
+/**
+ * Enable access condition on moderation dashboard.
+ */
+function moderation_dashboard_update_8101() {
+  $moderation_page = \Drupal::configFactory()->getEditable('page_manager.page.moderation_dashboard2');
+  if ($moderation_page->getOriginal('uuid') !== NULL) {
+    $conditions = $moderation_page->get('access_conditions');
+    if (is_array($conditions)) {
+      foreach ($conditions as $key => $condition) {
+        if ($condition['id'] === 'has_moderated_content_type') {
+          $conditions[$key]['enable'] = TRUE;
+        }
+        elseif ($condition['id'] === 'moderation_dashboard_access') {
+          $conditions[$key]['enable'] = TRUE;
+        }
+      }
+      $moderation_page
+        ->set('access_conditions', $conditions)
+        ->save(TRUE);
+    }
+  }
+}
+
+/**
+ * Upgrade from 1.x to 2.x.
+ */
+function moderation_dashboard_update_8102() {
+  // Check if views.view.moderation_dashboard exists.
+  // If it does 2.x is probably installed.
+  $check = \Drupal::configFactory()->getEditable('views.view.moderation_dashboard');
+  $message = 'views.view.moderation_dashboard existed nothing was needed';
+
+  if ($check->getOriginal('uuid') === NULL) {
+
+    // First check that layout builder is installed.  If not install it.
+    $moduleHandler = \Drupal::service('module_handler');
+    if (!$moduleHandler->moduleExists('layout_builder')) {
+      \Drupal::service('module_installer')->install(['layout_builder']);
+    }
+
+    // Second delete the page_manager moderation dashboard.
+    // @phpstan-ignore-next-line
+    $page_manage = Page::load('moderation_dashboard');
+    if(!empty($page_manage)){
+        $page_manage->delete();
+    }
+
+    // Lastly import the new configuration for working with layout builder.
+    \Drupal::service('config.installer')
+      ->installDefaultConfig('module', 'moderation_dashboard');
+
+    $message = 'views.view.moderation_dashboard did not exist module config was reimported';
+  }
+  return $message;
+}

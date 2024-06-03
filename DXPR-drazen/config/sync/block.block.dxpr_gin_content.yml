@@ -1,0 +1,22 @@
+uuid: 05c68bd5-2322-4a87-8307-e89267d2399a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dxpr_gin
+_core:
+  default_config_hash: JrYn6_dled096c5aWBzV8ko6W0roZiKgWbCPpclgApE
+id: dxpr_gin_content
+theme: dxpr_gin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

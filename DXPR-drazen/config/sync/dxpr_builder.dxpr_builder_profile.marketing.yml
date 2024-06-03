@@ -1,0 +1,84 @@
+uuid: 4492f397-af00-4f1e-9af5-3c7303f8f932
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2Vj8cvAJSBhGHrgrWUwy80qW_3lwT4gZZLMezsEsGfc
+id: marketing
+label: Marketing
+dxpr_editor: true
+weight: 0
+roles:
+  - marketer
+elements:
+  - az_accordion
+  - az_blockquote
+  - az_button
+  - az_card
+  - az_counter
+  - az_html
+  - az_icon
+  - az_image
+  - az_text
+  - az_video
+  - az_row
+  - az_section
+  - az_toggle
+blocks: {  }
+views: {  }
+page_templates:
+  - 543e45e5-3f64-464c-b781-94d529133fc2
+  - c588e041-6252-42be-bd6d-76278483e7c0
+user_templates:
+  - 6773325e-0b4e-47bc-af80-e62f18141875
+inline_buttons:
+  - Bold
+  - Italic
+  - BulletedList
+  - NumberedList
+  - Undo
+  - Redo
+  - Link
+  - Unlink
+  - Image
+  - RemoveFormat
+  - Format
+  - Styles
+  - Table
+modal_buttons:
+  - Bold
+  - Italic
+  - Underline
+  - Strike
+  - JustifyLeft
+  - JustifyCenter
+  - JustifyRight
+  - JustifyBlock
+  - BulletedList
+  - NumberedList
+  - Outdent
+  - Indent
+  - Undo
+  - Redo
+  - Link
+  - Unlink
+  - Image
+  - TextColor
+  - Superscript
+  - Subscript
+  - Blockquote
+  - Source
+  - HorizontalRule
+  - PasteText
+  - PasteFromWord
+  - ShowBlocks
+  - RemoveFormat
+  - SpecialChar
+  - Format
+  - FontSize
+  - Styles
+  - Table
+  - CreateDiv
+  - Maximize
+  - Scayt
+  - Templates

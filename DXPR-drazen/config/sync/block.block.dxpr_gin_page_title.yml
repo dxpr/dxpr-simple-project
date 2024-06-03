@@ -1,0 +1,20 @@
+uuid: 146530d9-5253-44f1-8caf-477f97f5eedc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dxpr_gin
+_core:
+  default_config_hash: jsolANqDE-X_C9VAMCOk_AB2NHA68Onuo3-6om4VabE
+id: dxpr_gin_page_title
+theme: dxpr_gin
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

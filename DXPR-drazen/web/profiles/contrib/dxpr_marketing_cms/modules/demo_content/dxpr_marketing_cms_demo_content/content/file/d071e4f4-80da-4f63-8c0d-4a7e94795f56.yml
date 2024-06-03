@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d071e4f4-80da-4f63-8c0d-4a7e94795f56
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: flakes-rgba-com.png
+  uri:
+    -
+      value: 'public://2023-04/flakes-rgba-com.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1764
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1680858465

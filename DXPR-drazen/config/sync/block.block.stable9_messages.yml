@@ -1,0 +1,22 @@
+uuid: 979621e6-01d6-47e9-8c75-833ca00d7b55
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stable9
+_core:
+  default_config_hash: gf_NCqPu-9aFeCTSbDJWUKbMq6Vyc8BJWxafByZCHHo
+id: stable9_messages
+theme: stable9
+region: content
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,11 @@
+a {
+  color: #0550e6;
+}
+
+.button--primary {
+  background: black !important;
+}
+.button--primary:hover,
+.button--primary:focus {
+  background: #0550e6 !important;
+}

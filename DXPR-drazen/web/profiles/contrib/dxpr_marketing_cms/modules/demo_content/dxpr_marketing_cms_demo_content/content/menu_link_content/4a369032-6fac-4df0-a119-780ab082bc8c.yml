@@ -1,0 +1,70 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 4a369032-6fac-4df0-a119-780ab082bc8c
+  bundle: menu_link_content
+default:
+  revision_log_message:
+    -
+      value: 'Created by translation job <a href="/admin/tmgmt/jobs/6">Blog</a>.'
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Blog
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/blog'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -45
+  expanded:
+    -
+      value: false
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1680858656
+translations:
+  es:
+    title:
+      -
+        value: Blog
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 1
+    content_translation_status:
+      -
+        value: true
+    content_translation_created:
+      -
+        value: 1680858656

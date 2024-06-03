@@ -1,0 +1,26 @@
+uuid: bebf0627-1a29-4c15-8453-bc2684e468e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_classes
+    - dxpr_theme_helper
+  theme:
+    - stable9
+third_party_settings:
+  block_classes:
+    block_class: float-xl-end
+_core:
+  default_config_hash: tT_t5S1BI5GusPaYWbkZ1gpz35RGRkxKVREEVmrfPRQ
+id: stable9_dxprthemefullscreensearch
+theme: stable9
+region: sidebar_first
+weight: -4
+provider: null
+plugin: full_screen_search
+settings:
+  id: full_screen_search
+  label: 'DXPR Theme Full Screen Search'
+  label_display: '0'
+  provider: dxpr_theme_helper
+visibility: {  }

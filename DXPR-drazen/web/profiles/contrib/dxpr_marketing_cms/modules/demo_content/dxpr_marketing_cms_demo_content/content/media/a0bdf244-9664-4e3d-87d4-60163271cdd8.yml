@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a0bdf244-9664-4e3d-87d4-60163271cdd8
+  bundle: image
+  depends:
+    d071e4f4-80da-4f63-8c0d-4a7e94795f56: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: flakes-rgba-com.png
+  created:
+    -
+      value: 1680858481
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  field_media_image:
+    -
+      entity: d071e4f4-80da-4f63-8c0d-4a7e94795f56
+      alt: 'Transparent flakes background pattern'
+      title: ''
+      width: 311
+      height: 150

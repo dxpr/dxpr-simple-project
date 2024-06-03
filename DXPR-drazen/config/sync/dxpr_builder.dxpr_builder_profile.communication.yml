@@ -1,0 +1,54 @@
+uuid: 6ba5943c-75e7-4f24-a1b7-3241b4a28555
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1C9JHQmmEopsBJT1iFEU8Z6iCr5GoyK4QOLZ8msN6nQ
+id: communication
+label: Communication
+dxpr_editor: true
+weight: 0
+roles:
+  - content_editor
+  - content_administrator
+elements:
+  - az_image
+  - az_text
+blocks: {  }
+views: {  }
+page_templates:
+  - c0913efe-b8e9-4399-8a1d-6bc8e64878aa
+user_templates:
+  - 13ee435d-642b-4e35-9980-a86009b4446f
+  - 54ea3e88-24b8-4aee-99a7-826f67992ef8
+  - c30643fa-76bd-4640-8ef5-ab1493573f9b
+inline_buttons:
+  - Bold
+  - Italic
+  - BulletedList
+  - Undo
+  - Redo
+  - Link
+  - Unlink
+  - Format
+modal_buttons:
+  - Bold
+  - Italic
+  - Underline
+  - Strike
+  - BulletedList
+  - NumberedList
+  - Undo
+  - Redo
+  - Link
+  - Unlink
+  - Image
+  - Superscript
+  - Subscript
+  - PasteText
+  - RemoveFormat
+  - SpecialChar
+  - Format
+  - Table
+  - Maximize
+  - Scayt

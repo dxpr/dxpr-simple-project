@@ -1,0 +1,16 @@
+*:not(
+  .checkbox-toggle__inner, 
+  .checkbox-toggle,
+  .form-type--radio *,
+  .ajax-progress *,
+  .ui-autocomplete *,
+  .claro-autocomplete *,
+  .form-autocomplete *,
+  .autocomplete-deluxe-container *,
+  .spinner *,
+  .meta-sidebar__trigger, .meta-sidebar__close
+) { border-radius: 0 !important; }
+
+.toolbar-menu-administration a.toolbar-menu__trigger {
+  bottom: 3px;
+}

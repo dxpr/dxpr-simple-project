@@ -1,0 +1,23 @@
+uuid: e0027f96-49ec-4885-8f09-295bcffe90ab
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dxpr_theme
+_core:
+  default_config_hash: f3MZmLF1ycmFQ5IINNl9vmwhVH9Qz6cnYkXJJkQjgqo
+id: footer
+theme: dxpr_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:5eca7429-4952-438e-b2f0-769f177aa5c7'
+settings:
+  id: 'block_content:5eca7429-4952-438e-b2f0-769f177aa5c7'
+  label: Footer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

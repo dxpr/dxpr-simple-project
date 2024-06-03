@@ -1,0 +1,20 @@
+uuid: afd6c547-cf68-4cba-aafe-d16e71dc4106
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.drag_and_drop_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: vR1oWj3XD7Jk8HAVOc2P54l45QbNueVFGS4ok2KLanI
+id: block_content.drag_and_drop_block
+target_entity_type_id: block_content
+target_bundle: drag_and_drop_block
+default_langcode: site_default
+language_alterable: true

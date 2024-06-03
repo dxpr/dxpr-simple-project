@@ -1,0 +1,31 @@
+uuid: 36bdac7a-1155-4e88-bbf9-7daa8be2a26c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_classes
+    - system
+  theme:
+    - dxpr_theme
+third_party_settings:
+  block_classes:
+    block_class: float-xl-end
+_core:
+  default_config_hash: nDS3YJnFbgHYL-UZKIwLApfodbMvjcxz7iLsMqe-HKc
+id: dxpr_theme_useraccountmenu
+theme: dxpr_theme
+region: navigation_collapsible
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

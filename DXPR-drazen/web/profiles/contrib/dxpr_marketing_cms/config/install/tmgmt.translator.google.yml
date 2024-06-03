@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - tmgmt_google
+name: google
+label: Google
+description: 'Google Translator service.'
+auto_accept: true
+weight: null
+plugin: google
+settings:
+  url: ''
+  api_key: ''
+remote_languages_mappings:
+  en: en
+  es: es
+  zh-hans: zh

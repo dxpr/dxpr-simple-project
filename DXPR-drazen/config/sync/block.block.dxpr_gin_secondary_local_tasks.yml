@@ -1,0 +1,22 @@
+uuid: 27e4bc5e-3227-4636-8f75-02035aeda051
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dxpr_gin
+_core:
+  default_config_hash: 9tDMNtxBxeX2yEH0DLD-i5-EA11MbTJ5CXht1JdL-fo
+id: dxpr_gin_secondary_local_tasks
+theme: dxpr_gin
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

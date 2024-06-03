@@ -1,0 +1,4 @@
+_core:
+  default_config_hash: tZrjYmAzD9QkhfEVoq0r0kiru5KmMp7o3nzqQYvmLO4
+redirect_on_login: true
+chart_js_cdn: true

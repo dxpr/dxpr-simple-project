@@ -1,0 +1,46 @@
+_core:
+  default_config_hash: 1fPmIVOuRfBub1eB2V0_ffWokvgdtEUZpP6p0isX57g
+profile: dxpr_marketing_cms
+blacklist:
+  - 'admin_toolbar_search.*'
+  - 'automated_cron.*'
+  - 'block.block.bootstrap*'
+  - 'block.block.claro*'
+  - 'block.block.stable9*'
+  - 'bootstrap5.*'
+  - 'claro.*'
+  - 'comment.*'
+  - 'core.*'
+  - 'dblog.*'
+  - 'devel.*'
+  - 'editor.*'
+  - 'entity_browser.*'
+  - 'field_ui.*'
+  - 'field.field.block_content.*'
+  - 'field.field.media.*'
+  - 'field.field.comment.*'
+  - 'field.field.node.drag_and_drop_page.*'
+  - 'field.field.user.*'
+  - field.settings
+  - 'field.storage.*'
+  - 'file.*'
+  - 'filter.*'
+  - 'gin_login.*'
+  - 'image.*'
+  - 'media_library.*'
+  - 'menu_ui.*'
+  - 'metatag.*'
+  - node.type.drag_and_drop_page
+  - 'olivero.*'
+  - 'responsive_preview.*'
+  - 'search.*'
+  - 'shortcut.*'
+  - 'system.*'
+  - 'taxonomy.*'
+  - 'text.*'
+  - 'tour.*'
+  - 'update.*'
+  - user.flood
+  - user.mail
+  - user.settings
+  - 'xmlsitemap.*'

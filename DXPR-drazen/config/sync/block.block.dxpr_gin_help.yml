@@ -1,0 +1,22 @@
+uuid: f2a051ab-f096-4d26-8da7-66b198654d4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - dxpr_gin
+_core:
+  default_config_hash: dkTKR0J2VhALVEKCtVkgsQEttrCo16VXklJIRCd3d-4
+id: dxpr_gin_help
+theme: dxpr_gin
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

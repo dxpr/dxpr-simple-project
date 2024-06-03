@@ -1,0 +1,20 @@
+uuid: 0ca3fa3c-d336-41ff-969b-4c25a1e72117
+langcode: en
+status: true
+dependencies:
+  config:
+    - shortcut.set.default
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: NKoRi4PZWsHS9HqrvI6f7f4yysLt-d4GxsZIPV7yPiU
+id: shortcut.default
+target_entity_type_id: shortcut
+target_bundle: default
+default_langcode: site_default
+language_alterable: false

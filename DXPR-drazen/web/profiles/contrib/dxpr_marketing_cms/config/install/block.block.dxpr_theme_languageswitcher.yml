@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_classes
+    - language
+  theme:
+    - dxpr_theme
+third_party_settings:
+  block_classes:
+    block_class: small
+id: dxpr_theme_languageswitcher
+theme: dxpr_theme
+region: secondary_header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

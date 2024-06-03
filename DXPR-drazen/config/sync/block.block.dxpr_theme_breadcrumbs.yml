@@ -1,0 +1,22 @@
+uuid: c86abfa8-5d6e-4b8e-85bf-3fb6ee2ee554
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dxpr_theme
+_core:
+  default_config_hash: cHt8udGpnGD4ukrP-R9aHcIj3t8s6tm18DA7n5bOP3o
+id: dxpr_theme_breadcrumbs
+theme: dxpr_theme
+region: page_title
+weight: 10
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

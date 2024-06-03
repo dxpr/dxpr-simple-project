@@ -1,0 +1,79 @@
+name: DXPR Marketing CMS
+type: profile
+distribution:
+  name: DXPR Marketing CMS
+  install:
+    theme: dxpr_claro
+core_version_requirement: ^10
+description: 'Install with DXPR Builder pre-configured.'
+version: VERSION
+install:
+  - admin_toolbar
+  - admin_toolbar_search
+  - automated_cron
+  - big_pipe
+  - block
+  - block_classes
+  - block_content
+  - breakpoint
+  - ckeditor5
+  - config
+  - contact
+  - contact_block
+  - content_translation
+  - contextual
+  - datetime
+  - dblog
+  - default_content
+  - dxpr_builder
+  - dxpr_builder_block
+  - dxpr_builder_media
+  - dxpr_builder_page
+  - dxpr_theme_helper
+  - dynamic_page_cache
+  - editor
+  - entity_browser
+  - field_group
+  - field_ui
+  - file
+  - gin_login
+  - help
+  - history
+  - image
+  - inline_entity_form
+  - language
+  - media
+  - media_library
+  - menu_link_attributes
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - metatag_hreflang
+  - moderation_dashboard
+  - node
+  - options
+  - page_cache
+  - path
+  - pathauto
+  - redirect
+  - responsive_preview
+  - search
+  - shortcut
+  - taxonomy
+  - tmgmt
+  - tmgmt_google
+  - tmgmt_locale
+  - tmgmt_content
+  - tmgmt_config
+  - toolbar
+  - tour
+  - views
+  - views_ui
+  - workflows
+  - xmlsitemap
+themes:
+  - bootstrap5
+  - dxpr_theme
+  - claro
+  - gin
+  - dxpr_gin

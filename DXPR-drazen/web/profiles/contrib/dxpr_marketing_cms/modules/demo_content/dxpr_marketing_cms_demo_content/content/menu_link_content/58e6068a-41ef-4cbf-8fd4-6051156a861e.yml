@@ -1,0 +1,78 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 58e6068a-41ef-4cbf-8fd4-6051156a861e
+  bundle: menu_link_content
+  depends:
+    21cf2640-1bce-4a12-8346-104fca9d7736: menu_link_content
+default:
+  revision_log_message:
+    -
+      value: 'Created by translation job <a href="/admin/tmgmt/jobs/4">📄 DXPR Builder vs Theme</a>.'
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: '📄 DXPR Builder vs Theme'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'https://dxpr.com/documentation/external/1-dxpr-builder-and-theme-product-guide'
+      title: ''
+      options:
+        attributes:
+          class: {  }
+          target: _blank
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:21cf2640-1bce-4a12-8346-104fca9d7736'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1680857122
+translations:
+  es:
+    title:
+      -
+        value: '📄 DXPR Builder vs Tema'
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 1
+    content_translation_status:
+      -
+        value: true
+    content_translation_created:
+      -
+        value: 1680857122

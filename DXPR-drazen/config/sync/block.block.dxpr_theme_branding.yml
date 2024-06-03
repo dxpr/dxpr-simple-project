@@ -1,0 +1,25 @@
+uuid: 4c1565e3-127f-4f61-8f95-8d7a15d41e8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dxpr_theme
+_core:
+  default_config_hash: U2bS7fV8Bl2Q2MkQihzmnccdU_yvGvMKlKXqm-aF6JQ
+id: dxpr_theme_branding
+theme: dxpr_theme
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,53 @@
+name: DXPR-drazen
+recipe: drupal10
+config:
+  webroot: web
+#  xdebug: 'develop,debug'
+  php: '8.1'
+services:
+  myservice:
+    type: phpmyadmin
+#  mailhog:
+#    type: mailhog
+#    portforward: true
+#    hogfrom:
+#      - appserver
+  appserver:
+    overrides:
+      ports:
+        - "0.0.0.0::80"
+      environment:
+        MINK_DRIVER_ARGS: '["chrome", null, "http://chromedriver:4444/wd/hub"]'
+        MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", null, "http://chromedriver:4444/wd/hub"]'
+        MINK_DRIVER_CLASS: 'Drupal\FunctionalJavascriptTests\DrupalSelenium2Driver'
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION: "PHPSTORM"
+        XDEBUG_SESSION_START: lando
+        BEHAT_PARAMS: '{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "http://appserver/"}, "Drupal\\DrupalExtension" : {"drush" :   {  "root":  "/app/web" }}}}'
+
+        SIMPLETEST_BASE_URL: "http://DXPR-drazen.lndo.site"
+        SIMPLETEST_DB: "mysql://DXPR-drazen: DXPR-drazen@database/DXPR-drazen"
+#        MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chrome:9515"]'
+        PHP_SENDMAIL_PATH: '/usr/sbin/sendmail -S mailhog:1025'
+  chrome:
+    type: compose
+    services:
+      image: drupalci/webdriver-chromedriver:production
+      command: chromedriver --log-path=/tmp/chromedriver.log --verbose --whitelisted-ips=
+#  search:
+#    type: solr:8.8
+#    portforward: true
+#    core: drupal10
+#    config:
+#      dir: config/solr
+tooling:
+  test:
+    service: appserver
+    cmd: "php /app/vendor/bin/phpunit -c /app/phpunit.xml"
+proxy:
+#  mailhog:
+#    - mail.lemp.lndo.site
+  myservice:
+    - database.DXPR-drazen.lndo.site
+#  search:
+#    - d10.solr.lndo.site:8983

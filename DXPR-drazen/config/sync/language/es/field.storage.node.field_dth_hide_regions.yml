@@ -1,0 +1,20 @@
+settings:
+  allowed_values:
+    0:
+      label: Navegación
+    2:
+      label: 'Título de página'
+    4:
+      label: Encabezado
+    5:
+      label: 'Contenido Superior'
+    6:
+      label: Contenido
+    7:
+      label: 'Fondo del Contenido'
+    8:
+      label: Primario
+    9:
+      label: Secundario
+    10:
+      label: 'Pie de página'

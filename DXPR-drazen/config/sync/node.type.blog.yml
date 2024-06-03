@@ -1,0 +1,19 @@
+uuid: 318b0410-9da5-4cf4-9aac-4845dd48f3a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: I1ZwzbmUxCoUBHfTt9vBOxseh9hew_vf7FgYjUr7NAY
+name: Blog
+type: blog
+description: 'Use <em>blogs</em> for updates to the company blog section.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

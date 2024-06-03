@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 77bda4a4-571d-4bdb-a735-82734913598b
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sincerely-media-5LYQQS_JUgY-unsplash.jpg
+  uri:
+    -
+      value: 'public://2023-04/sincerely-media-5LYQQS_JUgY-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 610326
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1680860486

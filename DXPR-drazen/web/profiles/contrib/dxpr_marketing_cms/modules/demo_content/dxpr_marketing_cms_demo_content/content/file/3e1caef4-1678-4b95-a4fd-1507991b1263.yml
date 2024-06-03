@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3e1caef4-1678-4b95-a4fd-1507991b1263
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: brooke-cagle-Nm70URdtf3c-unsplash.jpg
+  uri:
+    -
+      value: 'public://2023-04/brooke-cagle-Nm70URdtf3c-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1882910
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1680860527
