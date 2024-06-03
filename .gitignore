@@ -23,5 +23,8 @@ out
 /DXPR-drazen/web/core/*
 /DXPR-drazen/web/profiles
 /DXPR-drazen/web/sites
+/DXPR-drazen/web/modules/contrib
 /DXPR-drazen/web/*
 !/DXPR-drazen/web/*/
+/DXPR-drazen/web/sites/default/
+
